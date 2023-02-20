@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Mohammad</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        body{
+            background :url('foot-backG.jpg');
+            background-repeat : no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav {
+  float: left;
+}
+
+.nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+h1{
+    color: #DC052D;
+}
+ol{
+    color: #DC052D;
+}
+.bayern-img{
+    text-align: center;
+    color: #DC052D;
+    font-size:160%;
+}
+    </style>
+</head>
+<body>
+    
+    <ul>  
+        <li class="nav"><a  href="index.html">Home</a></li>
+        <li class="nav"><a class="active" href="hobbies.html">Hobbies</a></li>
+        
+      </ul>
+      
+      <h1>My Hobbies</h1>
+      <ol type="1">
+        <li class="p">Football</li>
+        <li class="p">Basketball</li>
+        <li class="p">Programming</li>
+        <li class="p">Video Games</li>
+      </ol>
+
+<div class="bayern-img">
+      <img class="bayern" src="Bayern-Munich-FC-Logo-PNG-300x300.webp" alt="Bayern LOGO" height="250" width="250">
+  <img class="player" src="Musialla.png" alt="Best-Player"  height="250" width="250">
+    
+        <script> 
+                    $(document).ready(function() {
+                        $(".bayern").hide()
+                        $(".player").click(function() {
+                            $(".player").hide();
+                            $(".bayern").show();
+
+                        });
+                        $(".bayern").click(function() {
+                            $(".bayern").hide();
+                            $(".player").show();
+
+                        });
+                    });
+
+               </script>
+               <strong><p background-color: blue>CLICK ON THE IMAGE</p></strong>
+  </div>
+</body>
+</html>
